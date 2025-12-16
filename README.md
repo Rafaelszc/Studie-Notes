@@ -16,7 +16,7 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [ ] Selection Sort
     - [ ] Bubble Sort
     - [ ] Insertion sort
-    - [ ] Quick Sort
+    - [X] Quick Sort
     - [ ] Merge Sort
     - [ ] Counting Sort
 
