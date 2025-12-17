@@ -12,13 +12,13 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [ ] Árvore
     - [ ] Grafo
 
-- [ ] Algoritmos de ordenacão
-    - [ ] Selection Sort
-    - [ ] Bubble Sort
-    - [ ] Insertion sort
-    - [X] Quick Sort
-    - [ ] Merge Sort
-    - [ ] Counting Sort
+- [x] Algoritmos de ordenacão
+    - [x] [Selection Sort (versão tradicional)](src/sortAlgorithms/selection/SelectionSort.java) [(versão otimizada)](src/sortAlgorithms/selection/SelectionSort.java)
+    - [x] [Bubble Sort (versão tradicional)](src/sortAlgorithms/bubble/BubbleSort.java) [(versão otimizada)](src/sortAlgorithms/bubble/OptBubbleSort.java)
+    - [x] [Insertion sort](src/sortAlgorithms/insertion/InsertionSort.java)
+    - [X] [Quick Sort](src/sortAlgorithms/quick/QuickSort.java)
+    - [x] [Merge Sort](src/sortAlgorithms/merge/MergeSort.java)
+    - [x] [Counting Sort](src/sortAlgorithms/counting/CountingSort.java)
 
 - [ ] Algoritmos em grafos
     - [ ] Dijkstra
