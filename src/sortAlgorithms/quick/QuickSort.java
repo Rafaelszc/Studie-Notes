@@ -5,6 +5,7 @@ import sortAlgorithms.Sorting;
 public class QuickSort extends Sorting {
     public static void sort(int[] arr) {
         sort(arr, 0, arr.length-1);
+        printArray(arr);
     }
     private static void sort(int[] arr, int left, int right) {
         if (left < right){
