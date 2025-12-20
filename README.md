@@ -3,8 +3,9 @@
 Esse será um repositório de registro dos meus estudos na base da programacão.
 
 - [ ] Estrutura de dados:
-    - [ ] Array
-    - [ ] Fila
+    - [X] [Array](src/dataStructures/array/Array.c)
+    - [X] [Fila](src/dataStructures/queue/Queue.c)
+    - [ ] Fila Circular
     - [ ] Pilha
     - [ ] Linked List
     - [ ] Hash Table
