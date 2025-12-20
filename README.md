@@ -29,10 +29,24 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [ ] Árvore geradora mínima
 
 - [ ] Sistema Operacional
-    - [ ] Gerenciamento de Processos
-    - [ ] Gerenciamento de Memória
-    - [ ] Simultaneidade e Sincronização
-    - [ ] Arquitetura
+    - [ ] Introdução
+      - [ ] Arquitetura e componentes
+      - [ ] Kernel e User Space
+      - [ ] System calls e API's
+    - [ ] Gerenciamento de processos
+      - [ ] Process X Threads
+      - [ ] Process scheduling
+      - [ ] Inter-Process Communication
+    - [ ] Gerenciamento de memória
+      - [ ] Técnicas de alocação de memória
+      - [ ] Paging
+      - [ ] Segmentation
+      - [ ] Memória virtual
+    - [ ] Sincronização e concorrência
+      - [ ] Problemas de sincronização
+      - [ ] Mutexes
+      - [ ] Monitors
+      - [ ] Spinlocks
 
 - [ ] Redes de Computadores
     - [ ] Modelos OSI e TCP/IP
