@@ -97,5 +97,7 @@ int main()
     pop(stack);
     printStack(stack);
 
+    freeStack(stack);
+
     return 0;
 }
