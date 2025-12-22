@@ -6,8 +6,8 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [X] [Array](src/dataStructures/array/Array.c)
     - [X] [Fila](src/dataStructures/queue/Queue.c)
     - [X] [Fila Circular](src/dataStructures/queue/CircularQueue.c)
-    - [ ] Pilha
-    - [ ] Linked List
+    - [X] [Pilha](src/dataStructures/stack/Stack.c)
+    - [X] [Linked List](src/dataStructures/linkedList/LinkedList.c)
     - [ ] Hash Table
     - [ ] Heap
     - [ ] Árvore
