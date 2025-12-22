@@ -23,48 +23,58 @@ LinkedList *createNode(int value)
     return node;
 }
 
-void add(LinkedList *node, int value)
+void freeLinkedList(LinkedList *self)
 {
-    while (node->next != NULL)
-    {
-        node = node->next;
+    if (self->next != NULL) {
+        return freeLinkedList(self->next);
     }
-
-    node->next = createNode(value);
+    free(self);
+    
+    return;
 }
 
-LinkedList *addFirst(LinkedList *node, int value)
+void add(LinkedList *self, int value)
+{
+    while (self->next != NULL)
+    {
+        self = self->next;
+    }
+
+    self->next = createNode(value);
+}
+
+LinkedList *addFirst(LinkedList *self, int value)
 {
     LinkedList *newHead = createNode(value);
-    newHead->next = node;
+    newHead->next = self;
 
     return newHead;
 }
 
-int pop(LinkedList *node, int index)
+int pop(LinkedList *self, int index)
 {
-    LinkedList *prev = node;
+    LinkedList *prev = self;
 
     for (int i=0; i<index; i++)
     {
-        if (node->next == NULL)
+        if (self->next == NULL)
         {
             printf("Index %d dosent exixts\n", index);
             return -1;
         }
-        prev = node;
-        node = node->next;
+        prev = self;
+        self = self->next;
     }
 
-    prev->next = node->next;
+    prev->next = self->next;
 
-    return node->value;
+    return self->value;
 }
 
-void printLinkedList(LinkedList *node)
+void printLinkedList(LinkedList *self)
 {
-    LinkedList *next = node->next;
-    printf("%d -> ", node->value);
+    LinkedList *next = self->next;
+    printf("%d -> ", self->value);
 
     while (next != NULL)
     {
@@ -84,6 +94,8 @@ int main()
     pop(head, 3);
 
     printLinkedList(head);
-
+    
+    freeLinkedList(head);
+    
     return 0;
 }
