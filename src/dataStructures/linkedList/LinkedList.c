@@ -51,6 +51,12 @@ LinkedList *addFirst(LinkedList *self, int value)
     return newHead;
 }
 
+LinkedList *removeFirst(LinkedList *self)
+{
+    self = self->next;
+    return self;
+}
+
 int pop(LinkedList *self, int index)
 {
     LinkedList *prev = self;
@@ -81,6 +87,7 @@ void printLinkedList(LinkedList *self)
         printf("%d -> ", next->value);
         next = next->next;
     }
+    printf("\n");
 }
 
 int main()
@@ -92,6 +99,10 @@ int main()
     head = addFirst(head, 4);
 
     pop(head, 3);
+
+    printLinkedList(head);
+
+    head = removeFirst(head);
 
     printLinkedList(head);
     
