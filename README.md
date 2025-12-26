@@ -11,7 +11,7 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [X] [Double Linked List](src/dataStructures/linkedList/DoubleLinkedList.c)
     - [ ] Hash Table
     - [ ] Heap
-    - [ ] Árvore
+    - [X] [Árvore Binária](src/dataStructures/tree/BinaryTree.java)
     - [ ] Grafo
 
 - [x] Algoritmos de ordenacão
