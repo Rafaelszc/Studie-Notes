@@ -8,6 +8,7 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [X] [Fila Circular](src/dataStructures/queue/CircularQueue.c)
     - [X] [Pilha](src/dataStructures/stack/Stack.c)
     - [X] [Linked List](src/dataStructures/linkedList/LinkedList.c)
+    - [X] [Double Linked List](src/dataStructures/linkedList/DoubleLinkedList.c)
     - [ ] Hash Table
     - [ ] Heap
     - [ ] Árvore
@@ -65,4 +66,4 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
         - [ ] Abstract Factory
         - [ ] Builder
         - [ ] Prototype
-        - [ ] Singleton
+        - [X] Singleton
