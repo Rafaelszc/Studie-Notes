@@ -1,5 +1,8 @@
 package dataStructures.tree;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BinarySearchTree<T extends Comparable<T>> {
     private Node<T> root;
 
@@ -37,5 +40,47 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
 
         return aux.getValue() == value;
+    }
+
+    public List<T> inOrder() {
+        return inOrder(new ArrayList<>(), this.root);
+    }
+
+    private List<T> inOrder(List<T> list, Node<T> node) {
+        if (node.isNil()) return list;
+
+        inOrder(list, node.getLeft());
+        list.add(node.getValue());
+        inOrder(list, node.getRight());
+
+        return list;
+    }
+
+    public List<T> preOrder() {
+        return preOrder(new ArrayList<>(), this.root);
+    }
+
+    private List<T> preOrder(List<T> list, Node<T> node) {
+        if (node.isNil()) return list;
+
+        list.add(node.getValue());
+        preOrder(list, node.getLeft());
+        preOrder(list, node.getRight());
+
+        return list;
+    }
+
+    public List<T> postOrder() {
+        return postOrder(new ArrayList<>(), this.root);
+    }
+
+    private List<T> postOrder(List<T> list, Node<T> node) {
+        if (node.isNil()) return list;
+
+        postOrder(list, node.getLeft());
+        postOrder(list, node.getRight());
+        list.add(node.getValue());
+
+        return list;
     }
 }
