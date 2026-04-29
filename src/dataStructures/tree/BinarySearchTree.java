@@ -1,78 +1,41 @@
 package dataStructures.tree;
 
-import java.util.ArrayList;
+public class BinarySearchTree<T extends Comparable<T>> {
+    private Node<T> root;
 
-public class BinaryTree<T> {
-    private BinaryTree<T> left;
-    private BinaryTree<T> right;
-    private T value;
-
-    public BinaryTree(T value, BinaryTree<T> left, BinaryTree<T> right) {
-        this.left = left;
-        this.right = right;
-        this.value = value;
+    public BinarySearchTree(T value) {
+        this.root = new Node<>(value);
     }
 
-    public BinaryTree(T value, BinaryTree<T> left) {
-        this.value = value;
-        this.left = left;
+    public int size() {
+        return size(this.root);
+
     }
 
-    public BinaryTree(T value) {
-        this.value = value;
+    private int size(Node<T> node) {
+        if (node.isNil()) return 0;
+
+        return 1 + size(node.getLeft()) + size(node.getRight());
     }
 
-    public ArrayList<T> preOrder() {
-        return preOrder(new ArrayList<T>());
-    }
+    public void insert(T value) {
+        Node<T> aux = this.root;
 
-    private ArrayList<T> preOrder(ArrayList<T> list){
-        list.add(this.value);
-
-        if (this.left != null) {
-            this.left.preOrder(list);
+        while (!aux.isNil()) {
+            if (aux.getValue().compareTo(value) < 0) aux = aux.getRight();
+            else aux = aux.getLeft();
         }
-        if (this.right != null) {
-            this.right.preOrder(list);
-        }
-
-        return list;
+        aux.setValue(value);
     }
 
-    public ArrayList<T> postOrder() {
-        ArrayList<T> list = postOrder(new ArrayList<>());
-        list.add(this.value);
-        return list;
-    }
+    public boolean find(T value) {
+        Node<T> aux = this.root;
 
-    private ArrayList<T> postOrder(ArrayList<T> list) {
-        if (this.left != null) {
-            this.left.postOrder(list);
-            list.add(this.left.value);
+        while (aux.getValue() != value && !aux.isNil()) {
+            if (aux.getValue().compareTo(value) < 0) aux = aux.getRight();
+            else aux = aux.getLeft();
         }
 
-        if (this.right != null) {
-            this.right.postOrder(list);
-            list.add(this.right.value);
-        }
-
-        return list;
-    }
-
-    public ArrayList<T> inOrder() {
-        return inOrder(new ArrayList<T>());
-    }
-
-    private ArrayList<T> inOrder(ArrayList<T> list) {
-        if (this.left != null) {
-            this.left.inOrder(list);
-        }
-        list.add(this.value);
-
-        if (this.right != null) {
-            this.right.inOrder(list);
-        }
-
-        return list;
+        return aux.getValue() == value;
     }
 }
