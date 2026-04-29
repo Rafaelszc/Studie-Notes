@@ -9,7 +9,7 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [X] [Pilha](src/dataStructures/stack/Stack.c)
     - [X] [Linked List](src/dataStructures/linkedList/LinkedList.c)
     - [X] [Double Linked List](src/dataStructures/linkedList/DoubleLinkedList.c)
-    - [ ] Hash Table
+    - [X] [Hash Table](src/dataStructures/hash/HashTable.java)
     - [ ] Heap
     - [X] [Árvore Binária](src/dataStructures/tree/BinaryTree.java)
     - [ ] Grafo
