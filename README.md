@@ -61,9 +61,11 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
     - [ ] Seguranca de redes
 
 - [ ] Design Patterns
-    - [ ] Creational Patterns
+    - [ ] Creational
         - [ ] Factory Method
         - [ ] Abstract Factory
         - [ ] Builder
         - [ ] Prototype
         - [X] Singleton
+    - [ ] Behavioral
+      - [X] Observer
