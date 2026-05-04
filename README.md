@@ -66,6 +66,6 @@ Esse será um repositório de registro dos meus estudos na base da programacão.
         - [ ] Abstract Factory
         - [ ] Builder
         - [ ] Prototype
-        - [X] Singleton
+        - [X] [Singleton](src/designPatterns/creational/singleton/Singleton.java)
     - [ ] Behavioral
-      - [X] Observer
+      - [X] [Observer](src/designPatterns/behavioral/observer)
